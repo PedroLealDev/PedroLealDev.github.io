@@ -89,9 +89,9 @@
         <p class="subtitles">Sobre mim</p>
         <p id="text">
           Desenvolvedor Front-end com experiência em HTML 5, CSS 3, BOOTSTRAP e
-          JAVASCRIPT. Formado em Engenharia Mecânica, decidi seguir na área de
-          desenvolvimento web full stack. Me considero como um mix de perfil
-          criativo com analítico.
+          JAVASCRIPT. Focado em entregar apricações com código limpo,
+          organizado, responsivo e com máxima fidelidade aos princípios e
+          objetivos do projeto. Graduado em Engenharia Mecânica.
         </p>
       </div>
 
@@ -127,16 +127,168 @@
 
       <div id="projects">
         <p class="subtitles">Projetos</p>
-        <!-- <div class="cards">
-            <div class="card1"></div>
-            <p>Landing Page - Flow School</p>
-            <img
-              class="flow-img"
-              src="./images/tela metodo flow.png"
-              alt="flow-case"
-            />
-            <button>Ver mais</button>
-          </div> -->
+        <div class="cards">
+          <div class="buttom1">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="see-more"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop01"
+            >
+              <div class="project-card card01">
+                <p class="card-title">Landing page - Flow School</p>
+                <div class="card-img">
+                  <img
+                    class="flow-img"
+                    src="./images/flow-img.png"
+                    alt="flow-case"
+                  />
+                </div>
+              </div>
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop01"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdrop01Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdrop01Label">
+                      Landing Page
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="video">
+                      <video id="flow-video" controls>
+                        <source
+                          src="./videos/2022-12-27 14-37-46.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <p class="video-description">
+                      Landing Page desenvolvida como página de vendas, com
+                      design responssivo adaptável para todos os tamanhos de
+                      tela, utilizando HTML5, CSS3 e Bootstrap.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://github.com/PedroLealDev/Landing-Page-Flow-School"
+                      target="_blank"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        Ver repositório
+                      </button>
+                    </a>
+
+                    <a
+                      href="https://landing-page-flow-school.vercel.app/"
+                      target="_blank"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        Ver projeto
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="buttom2">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="see-more"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop02"
+            >
+              <div class="project-card card02">
+                <p class="card-title">SpaceX Page</p>
+                <div class="card-img">
+                  <img
+                    class="flow-img"
+                    src="./images/spaceX-img.png"
+                    alt="flow-case"
+                  />
+                </div>
+              </div>
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop02"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdrop02Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdrop02Label">
+                      SpaceX Page
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="video">
+                      <video id="spacex-video" controls>
+                        <source
+                          src="./videos/spaxexvideo.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                    <p class="video-description">
+                      Página desenvolvida com intuito de copiar o layout do site
+                      da empresa SpaceX, aplicando os conceitos de mobile first
+                      e design responsivo para os diferentes tamanhos de tela.
+                      Todo o site foi feito utilizando HTML, CSS e Bootstrap.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <a
+                      href="https://github.com/PedroLealDev/SpaceX"
+                      target="_blank"
+                    >
+                      <button type="button" class="btn btn-primary btn-sm">
+                        Ver repositório
+                      </button>
+                    </a>
+                    <a href="https://space-x-livid.vercel.app" target="_blank">
+                      <button type="button" class="btn btn-primary btn-sm">
+                        Ver projeto
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="call-me">
@@ -155,6 +307,7 @@
           <a
             href="https://api.whatsapp.com/send/?phone=5571991298316&text&type=phone_number&app_absent=0"
             class="contact-link"
+            target="_blank"
           >
             <div class="contact-item">
               <div class="icon">
@@ -168,6 +321,7 @@
           <a
             href="https://www.linkedin.com/in/pedroleal-dev/"
             class="contact-link"
+            target="_blank"
           >
             <div class="contact-item">
               <div class="icon">
@@ -178,7 +332,11 @@
             </div>
           </a>
 
-          <a href="https://github.com/PedroLealDev" class="contact-link">
+          <a
+            href="https://github.com/PedroLealDev"
+            class="contact-link"
+            target="_blank"
+          >
             <div class="contact-item">
               <div class="icon">
                 <i class="fa-brands fa-github fa-2xl"></i>
